@@ -96,7 +96,7 @@ class SpreadView @JvmOverloads constructor(context: Context, attrs: AttributeSet
             val width = spreadRadius[i]
             //绘制扩散的圆
 
-            if (width < this.width / 2) {
+            if (width < this.width / 2-radius) {
                 canvas.drawCircle(centerX, centerY, (radius + width).toFloat(), spreadPaint)
             }
 
